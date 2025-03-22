@@ -18,10 +18,10 @@ export default function Info({info}) {
 
     return (
         <div className="info-box">
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{ minWidth: 300, maxWidth: 350, borderRadius: 2, boxShadow: 5 }}>
                 <CardActionArea>
                     <CardMedia
-                    component="img" height="140"
+                    component="img" height="180"
                     image= {info.humidity>75 ? RAIN_URL : info.temp>30 ? HOT_URL : info.temp<15 ? COLD_URL : INIT_URL}
                     alt="City"
                     />
